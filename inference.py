@@ -2,6 +2,7 @@ import torch
 from model import ColaModel
 from data import DataModule
 
+from utils import timing
 
 class ColaPredictor:
     def __init__(self, model_path):
@@ -24,6 +25,7 @@ class ColaPredictor:
         # Move model to device
         self.model = self.model.to(self.device)
 
+    @timing
     def predict(self, text):
         inference_sample = {"sentence": text}
         processed = self.processor.tokenize_data(inference_sample)
@@ -40,5 +42,5 @@ class ColaPredictor:
 
 if __name__ == "__main__":
     sentence = "The boy is sitting on a bench"
-    predictor = ColaPredictor("./models/best-checkpoint.ckpt")
+    predictor = ColaPredictor("./models/best-checkpoint-1.ckpt")
     print(predictor.predict(sentence))

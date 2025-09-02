@@ -13,3 +13,5 @@ omegaconf
 hydra_colorlog
 dvc
 dvc-gdrive
+onnxruntime
+onnx
