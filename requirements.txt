@@ -1,0 +1,15 @@
+pytorch-lightning
+datasets
+transformers
+scikit-learn
+tensorboard
+torchmetrics
+wandb
+matplotlib
+seaborn
+pandas
+hydra-core
+omegaconf
+hydra_colorlog
+dvc
+dvc-gdrive

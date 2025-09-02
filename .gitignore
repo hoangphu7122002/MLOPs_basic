@@ -1,0 +1,16 @@
+/trained_model
+__pycache__
+service_account.json
+logs
+multirun
+wandb
+.dvc
+.dvc/cache
+.dvc/config
+.dvc/config.local
+.dvc/tmp
+.dvc/service-account.json
+.dvc/config.local
+.dvc/tmp
+.dvc/service-account.json
+outputs

@@ -1,0 +1,8 @@
+[core]
+    remote = myremote
+['remote "storage"']
+    url = gdrive://1TIA_VaQfTfKsqXzBa7NxZk1pdQDqjrxp
+    gdrive_service_account_json_file_path = /Users/hoangphu/Desktop/MLOps-Basics/week_0_project_setup/service_account.json
+    gdrive_use_service_account = true
+['remote "myremote"']
+    url = s3://mlops-phu
